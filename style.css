@@ -1,0 +1,194 @@
+html {
+    --primary: #123;
+    --secondary: #bada55;
+    --seda: #aba;
+    --sirka: 700px;
+    --padding: 16px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: url('pozadi.png'), linear-gradient(to bottom, var(--primary) 150px, var(--seda) 155px);
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+
+    max-width: var(--sirka);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sloupec {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    flex-wrap: wrap;
+}
+
+.fl-r {
+    margin-left: auto
+}
+
+header,
+header a {
+    color: var(--primary);
+    text-shadow: 0px 0px 1px var(--seda);
+}
+
+.me:hover a {
+    color: var(--secondary);
+    text-shadow: 0px 0px 5px var(--primary);
+}
+
+.me {
+    background: var(--secondary);
+    box-shadow: 0px 0px 2px var(--seda);
+    align-items: center;
+}
+
+.me:hover {
+    background: var(--primary);
+    box-shadow: 0px 0px 2px var(--secondary);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    background: var(--secondary);
+    box-shadow: 0px 0px 2px var(--seda);
+}
+
+nav ul li:hover {
+    background: var(--primary);
+}
+
+nav ul li:hover a {
+    color: var(--secondary);
+    border: 0;
+
+}
+
+li i {
+    font-size: 30
+}
+
+#info {
+    background: white;
+    max-width: var(--sirka);
+    min-height: 30px;
+    margin: 74px auto;
+}
+
+.bublina {
+    background: var(--secondary);
+    display: inline-block;
+    margin: 0 auto 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 14px;
+    right: -80px;
+    bottom: 30px;
+}
+
+.bublina:after {
+    content: '';
+    background: var(--secondary);
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    bottom: -5;
+    left: 50px;
+    transform: rotate(50deg);
+    transform-origin: bottom right;
+}
+
+p {
+    margin: 10px 0
+}
+
+.sloupec:not(.me):not(.fl-r) a {
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary)
+}
+
+.sloupec:not(.me) a:hover {
+    border-bottom: none;
+}
+
+th {
+    text-align: left;
+    font-weight: 500;
+}
+
+.c-primary {
+    color: var(--primary)
+}
+
+@media (max-width: 650px) {
+    .bublina {
+        display: none;
+    }
+
+    #info,
+    .sloupec {
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding: var(--padding)5px;
+    }
+
+    table {
+        margin: auto;
+        text-align: center;
+
+    }
+
+}
+
+
+@media print {
+    body {
+        padding: 0;
+    }
+
+    .sloupec {
+        padding: 10px
+    }
+
+    header {
+        display: none !important;
+    }
+
+    body {
+        background: none;
+    }
+
+    body {
+        filter: grayscale(100%);
+    }
+
+    .bublina {
+        display: none;
+    }
+
+    a {
+        border: 0 !important;
+    }
+
+    #info {
+        margin: auto;
+    }
+}
