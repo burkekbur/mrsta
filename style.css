@@ -146,7 +146,7 @@ th {
     .sloupec {
         display: block;
         text-align: center;
-        margin: auto;
+        margin: 10px auto;
         padding: var(--padding)5px;
     }
 
