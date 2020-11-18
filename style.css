@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background: url('pozadi.png'), linear-gradient(to bottom, var(--primary) 150px, var(--seda) 155px);
+    background: url('pozadi.png'), linear-gradient(to bottom, var(--primary) 305px, var(--seda) 310px);
     padding: 32px;
     font-family: Arial, Helvetica, sans-serif;
 }
