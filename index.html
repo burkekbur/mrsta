@@ -103,10 +103,18 @@
 
         </div>
         <script>
+            let i = 0;
             let html = document.documentElement;
             document.querySelector('img').addEventListener('click', function () {
-                html.style.setProperty('--primary', '#7d0000')
-                html.style.setProperty('--secondary', 'gold')
+                if (i == 0) {
+                    html.style.setProperty('--primary', '#7d0000')
+                    html.style.setProperty('--secondary', 'gold')
+                        ++i
+                } else {
+                    html.style.setProperty('--primary', 'black')
+                    html.style.setProperty('--secondary', 'ghostwhite')
+                        --i
+                }
             });
 
         </script>
