@@ -110,10 +110,14 @@
                     html.style.setProperty('--primary', '#7d0000')
                     html.style.setProperty('--secondary', 'gold')
                         ++i
-                } else {
+                } else if (i == 1) {
                     html.style.setProperty('--primary', 'black')
-                    html.style.setProperty('--secondary', 'ghostwhite')
-                        --i
+                    html.style.setProperty('--secondary', 'lime')
+                        ++i
+                } else {
+                    html.style.setProperty('--primary', '#123')
+                    html.style.setProperty('--secondary', '#bada55')
+                    i = 0
                 }
             });
 
