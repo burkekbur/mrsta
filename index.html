@@ -44,11 +44,11 @@
                         <tbody>
                             <tr>
                                 <th>Telefon</th>
-                                <td><a href="tel:00420604118932">+420&nbsp;604&nbsp;118&nbsp;932</a></td>
+                                <td><a href="tel:00420684118932">+420&nbsp;684&nbsp;118&nbsp;932</a></td>
                             </tr>
                             <tr>
                                 <th>Email</th>
-                                <td><a href="mailto:mrstik.martin@gmail.com">mrstik.martin@gmail.com</a></td>
+                                <td><a href="mailto:mrstikmartin@gmail.com">mrstikmartin@gmail.com</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -102,7 +102,14 @@
             </div>
 
         </div>
+        <script>
+            let html = document.documentElement;
+            document.querySelector('img').addEventListener('click', function () {
+                html.style.setProperty('--primary', '#7d0000')
+                html.style.setProperty('--secondary', 'gold')
+            });
 
+        </script>
     </body>
 
 </html>
