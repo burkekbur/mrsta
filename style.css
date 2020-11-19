@@ -85,7 +85,7 @@ li i {
   font-size: 30
 }
 
-#info {
+.row:not(header) {
   background: white;
   max-width: var(--sirka);
   min-height: 30px;
@@ -153,7 +153,7 @@ th {
     display: none;
   }
 
-  #info,
+  .row.info,
   .sloupec {
     display: block;
     text-align: center;
@@ -161,12 +161,15 @@ th {
     padding: var(--padding)5px;
   }
 
-  table {
+  .table {
     margin: auto;
     text-align: center;
 
   }
 
+  .content .row {
+    margin: 10px auto;
+  }
 }
 
 
@@ -200,7 +203,7 @@ th {
     border: 0 !important;
   }
 
-  #info {
+  .row {
     margin: auto;
   }
 }
