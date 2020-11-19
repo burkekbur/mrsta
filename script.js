@@ -16,5 +16,3 @@ document.querySelector('img').addEventListener('click', function ()
     i = 0;
   }
 });
-
-alert('test');
