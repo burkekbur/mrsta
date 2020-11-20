@@ -149,6 +149,10 @@ th {
   }
 }
 
+.stin {
+  box-shadow: 2px 2px 1px var(--primary);
+}
+
 @media (max-width: 750px) {
   .bublina {
     display: none;
