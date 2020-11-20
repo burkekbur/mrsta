@@ -26,16 +26,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
   document.querySelector('.vyjizdec').classList.add('vyjizec');
   let popupHeader = document.querySelectorAll(".vyjizdec-header");
   for (let i = 0; i < popupHeader.length; i++) {
-    console.log(this)
     popupHeader[i].addEventListener('click', function () {
       if (popupHeader[i].parentElement.parentElement.classList.contains('open')) {
         popupHeader[i].parentElement.parentElement.style.setProperty('right', '-' + contwidth + 'px');
         popupHeader[i].parentElement.parentElement.classList.remove('open');
-        console.log('Má třídu');
       } else {
         popupHeader[i].parentElement.parentElement.classList.add('open');
         popupHeader[i].parentElement.parentElement.style.setProperty('right', '0');
-        console.log('Nemá třídu');
       }
     });
   };
