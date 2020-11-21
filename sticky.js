@@ -13,11 +13,7 @@ if (window.innerWidth > 750) {
       </div>
     </div>
   `)
-
 }
-
-
-
 document.addEventListener('DOMContentLoaded', function (event) {
   if ( /*@cc_on!@*/ true) {
     var ieclass = 'ie' + document.documentMode;
