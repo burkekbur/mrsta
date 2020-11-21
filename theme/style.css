@@ -170,4 +170,10 @@ th {
   .row {
     margin: auto;
   }
+  * {
+    box-shadow: unset !important;
+  }
+  .vyjizdec {
+    display: none !important;
+  }
 }
