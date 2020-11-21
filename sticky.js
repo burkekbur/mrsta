@@ -1,17 +1,21 @@
-document.write(`
-<div class="vyjizdec">
-    <div class="vyjizdec-obal ieundefined">
-      <div class="vyjizdec-header druhy"><span class="vyjizdec-title">AKTUÁLNÍ INFO</span>
-      </div>
-      <div class="vyjizdec-content">
-        <div class="vyjizdec-content-pad">
-          <h2>Lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus deserunt ullam nobis beatae assumenda ad modi ipsam excepturi praesentium eius facere fugiat, animi, vel odio dignissimos at! Ipsum, et.</p>
+if (window.innerWidth > 750) {
+  document.write(`
+  <div class="vyjizdec">
+      <div class="vyjizdec-obal ieundefined">
+        <div class="vyjizdec-header druhy"><span class="vyjizdec-title">AKTUÁLNÍ INFO</span>
+        </div>
+        <div class="vyjizdec-content">
+          <div class="vyjizdec-content-pad">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus deserunt ullam nobis beatae assumenda ad modi ipsam excepturi praesentium eius facere fugiat, animi, vel odio dignissimos at! Ipsum, et.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-`)
+  `)
+
+}
+
 
 
 document.addEventListener('DOMContentLoaded', function (event) {
