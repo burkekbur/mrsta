@@ -113,6 +113,7 @@ th {
 .c-primary {
   color: var(--primary)
 }
+
 @media (min-width:751px) {
   .o-mne h2 {
     display: flex;
@@ -125,6 +126,7 @@ th {
 .stin {
   box-shadow: 2px 2px 1px var(--primary);
 }
+
 @media (max-width: 750px) {
   .bublina {
     display: none;
@@ -144,6 +146,7 @@ th {
     margin: 10px auto;
   }
 }
+
 @media print {
   body {
     padding: 0;
