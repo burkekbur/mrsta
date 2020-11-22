@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     let vyjizdec = document.createElement('vyjizdec');
     vyjizdec.classList.add('vyjizdec');
     vyjizdec.innerHTML = `
-          <link rel="stylesheet" href="plugins/sticky/sticky.css">
           <div class="vyjizdec-header">
           <span>Změnit barvy</span>
           </div>
@@ -36,25 +35,20 @@ document.addEventListener('DOMContentLoaded', function (event) {
     let ieclass = 'ie' + document.documentMode;
     document.querySelector('vyjizdec').classList.add('ie', ieclass);
   }
-  setInterval(function(){
-
-    let contWidth = document.querySelector('.vyjizdec-content').offsetWidth + 2;
-    document.querySelector('.vyjizdec').style.setProperty('left', '-' + contWidth + 'px');
-    document.querySelector('.vyjizdec').style.setProperty('visibility', 'visible');
-    let vyjizdecHeader = document.querySelectorAll(".vyjizdec-header");
-    for (let i = 0; i < vyjizdecHeader.length; i++) {
-      vyjizdecHeader[i].addEventListener('click', function () {
-        if (vyjizdecHeader[i].parentElement.classList.contains('open')) {
-          vyjizdecHeader[i].parentElement.style.setProperty('left', '-' + contWidth + 'px');
-          vyjizdecHeader[i].parentElement.classList.remove('open');
-        } else {
-          vyjizdecHeader[i].parentElement.classList.add('open');
-          vyjizdecHeader[i].parentElement.style.setProperty('left', '0');
-        }
-      });
-    };
-
-  },1);
-
+  let contWidth = document.querySelector('.vyjizdec-content').offsetWidth + 2;
+  document.querySelector('.vyjizdec').style.setProperty('left', '-' + contWidth + 'px');
+  document.querySelector('.vyjizdec').style.setProperty('visibility', 'visible');
+  let vyjizdecHeader = document.querySelectorAll(".vyjizdec-header");
+  for (let i = 0; i < vyjizdecHeader.length; i++) {
+    vyjizdecHeader[i].addEventListener('click', function () {
+      if (vyjizdecHeader[i].parentElement.classList.contains('open')) {
+        vyjizdecHeader[i].parentElement.style.setProperty('left', '-' + contWidth + 'px');
+        vyjizdecHeader[i].parentElement.classList.remove('open');
+      } else {
+        vyjizdecHeader[i].parentElement.classList.add('open');
+        vyjizdecHeader[i].parentElement.style.setProperty('left', '0');
+      }
+    });
+  };
 
 });
