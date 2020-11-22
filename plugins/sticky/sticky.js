@@ -16,7 +16,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
               html.style.setProperty('--secondary', 'gold');" class="barva item-2"></span>
               <span onclick="html.style.setProperty('--primary', 'black');
               html.style.setProperty('--secondary', 'lime');" class="barva item-3"></span>
-              <span title="Připravuje se" class="barva item-4 disable"></span>
+              <span onclick="html.style.setProperty('--primary', 'midnightblue');
+              html.style.setProperty('--secondary', 'cadetblue');" class="barva item-4"></span>
+              <span onclick="html.style.setProperty('--primary', '#540075');
+              html.style.setProperty('--secondary', 'gold');" class="barva item-5"></span>
+              <span onclick="html.style.setProperty('--primary', '#e06700');
+              html.style.setProperty('--secondary', '#7aff00');" class="barva item-6"></span>
+              <span onclick="html.style.setProperty('--primary', '#321');
+              html.style.setProperty('--secondary', '#bada55');" class="barva item-7"></span>
+              <span title="Připravuje se" class="barva item-disabled disable"></span>
             </div>
           </div>
     `;

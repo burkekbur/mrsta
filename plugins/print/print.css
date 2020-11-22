@@ -1,8 +1,7 @@
-
 #print{
   display: inline-grid;
   grid-template-columns: 1fr;
-  column-gap: 10px;;
+  column-gap: 10px;
   position: fixed;
   bottom: 0;
   right: 50px;

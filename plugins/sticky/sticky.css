@@ -95,7 +95,23 @@
   background: linear-gradient( -45deg, black, black 49%, white 49%, white 51%, lime 51% );
 }
 
-.barva.item-4{
+.barva.item-4 {
+  background: linear-gradient( -45deg, midnightblue, midnightblue 49%, white 49%, white 51%, cadetblue 51% );
+}
+
+.barva.item-5{
+  background: linear-gradient( -45deg, #540075, #540075 49%, white 49%, white 51%, gold 51% );
+}
+
+.barva.barva.item-6{
+  background: linear-gradient( -45deg, #e06700, #e06700 49%, white 49%, white 51%, #7aff00 51% );
+}
+
+.barva.item-7{
+  background: linear-gradient( -45deg, #321, #321 49%, white 49%, white 51%, #bada55 51% );
+}
+
+.barva.item-disabled{
   background: linear-gradient( -45deg, rgb(38, 39, 38), rgb(38, 39, 38) 49%, white 49%, white 51%, rgb(224, 224, 226) 51% );
 }
 

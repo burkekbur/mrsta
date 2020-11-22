@@ -31,7 +31,7 @@ body {
   text-align: justify;
 }
 .fl-r {
-  margin-left: auto
+  margin-left: auto;
 }
 header,
 header a {
@@ -100,11 +100,11 @@ li i {
 }
 
 p {
-  margin: 10px 0
+  margin: 10px 0;
 }
 .sloupec:not(.me):not(.fl-r) a {
   color: var(--primary);
-  border-bottom: 2px solid var(--secondary)
+  border-bottom: 2px solid var(--secondary);
 }
 .sloupec:not(.me) a:hover {
   border-bottom: none;
@@ -114,7 +114,7 @@ th {
   font-weight: 500;
 }
 .c-primary {
-  color: var(--primary)
+  color: var(--primary);
 }
 
 @media (min-width:751px) {
@@ -178,7 +178,7 @@ th {
   }
   * {
     box-shadow: unset !important;
-    background: none !important
+    background: none !important;
   }
 
 }
