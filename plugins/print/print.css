@@ -25,9 +25,19 @@
   background: var(--primary);
 }
 
-@media print, (max-width:750px) {
+@media print {
   #print {
     display: none;
+  }
+}
+
+@media (max-width: 750px){
+  html {
+    position: relative;
+  }
+  #print {
+    position: absolute;
+    bottom: 0;
   }
 }
 
