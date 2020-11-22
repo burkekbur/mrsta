@@ -25,7 +25,7 @@
   background: var(--primary);
 }
 
-@media print {
+@media print, (max-width:750px) {
   #print {
     display: none;
   }
