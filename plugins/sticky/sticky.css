@@ -24,6 +24,10 @@
   box-shadow:  2px -2px 1px var(--primary);
   pointer-events: all;
 }
+.vyjizdec-header:hover {
+  color: var(--secondary);
+  background: var(--primary);
+}
 .vyjizdec-content {
   max-width: 100%;
   min-height: 200px;

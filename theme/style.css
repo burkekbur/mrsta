@@ -84,18 +84,21 @@ li i {
   font-size: 14px;
   right: -80px;
   bottom: 30px;
+  box-shadow: 2px 2px 1px var(--primary);
 }
 .bublina:after {
   content: '';
   background: var(--secondary);
-  width: 15px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   position: absolute;
   bottom: -5;
   left: 50px;
   transform: rotate(50deg);
   transform-origin: bottom right;
+  box-shadow: 2px 2px 1px var(--primary);
 }
+
 p {
   margin: 10px 0
 }

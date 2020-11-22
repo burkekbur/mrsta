@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   if (window.innerWidth > 750) {
     let vyjizdec = document.createElement('vyjizdec');
-    vyjizdec.classList.add('vyjizdec')
+    vyjizdec.classList.add('vyjizdec');
     vyjizdec.innerHTML = `
           <div class="vyjizdec-header">
           <span>Změnit barvy</span>
@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
               <span title="Připravuje se" class="barva item-4 disable"></span>
             </div>
           </div>
-    `
-    document.body.appendChild(vyjizdec)
+    `;
+    document.body.appendChild(vyjizdec);
   }
 
   if ( /*@cc_on!@*/ true) {
