@@ -112,5 +112,12 @@
   <script src="plugins/print/print.js"></script>
   <iframe width="0" height="0" src="https://www.youtube.com/embed/4n6WP9qHyRM?&autoplay=1" frameborder="0" muted
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <script>var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (!isChrome){
+            $('#iframeAudio').remove()
+        }
+        else {
+            $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background
+  }</script>
 </body>
 </html>
