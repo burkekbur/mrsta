@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>Portfolio</title>
   <link rel="stylesheet" href="theme/style.css">
   <link rel="stylesheet" href="plugins/sticky/sticky.css">
@@ -31,21 +32,21 @@
     </header>
     <div id="info" class="row informace stin">
       <div class="sloupec"><img src="theme/mrsta.jpg" width="200px" alt="Martin"></div>
-      <div class="sloupec">
-        <h2>Martin Mrštík</h2>
+      <div itemscope itemtype="http://schema.org/person" class="sloupec">
+        <h2 itemprop="name">Martin Mrštík</h2>
         <p style="position:relative;">
           <span class="bublina">Nebo cokoliv, co&nbsp;mi&nbsp;dáte 😁</span>
-          <strong>Web development, UX, Programming,…</strong>
+          <strong itemprop="jobTitle">Web development, UX, Programming,…</strong>
         </p><br>
         <table>
           <tbody>
             <tr>
               <th>Telefon</th>
-              <td><a href="tel:00420684118932">+420&nbsp;684&nbsp;118&nbsp;932</a></td>
+              <td><a itemprop="telephone" href="tel:00420684118932">+420&nbsp;684&nbsp;118&nbsp;932</a></td>
             </tr>
             <tr>
               <th>Email</th>
-              <td><a href="mailto:mrstikmartin@gmail.com">mrstikmartin@gmail.com</a></td>
+              <td><a itemprop="email" href="mailto:mrstikmartin@gmail.com">mrstikmartin@gmail.com</a></td>
             </tr>
           </tbody>
         </table>
