@@ -4,6 +4,7 @@ button {
   height: 30px;
   font-weight: 800;
   box-shadow: 2px 2px 1px var(--primary);
+  color: var(--primary);
 }
 button:hover {
   color: var(--secondary);
