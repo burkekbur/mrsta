@@ -13,5 +13,26 @@ background: var(--primary);
 #music {
   position:absolute;
   top: 0;
-  right: 50px
+  right: 50px;
+  animation-name: music-vstup;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  transition: all .8s;
+}
+
+@keyframes music-vstup {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

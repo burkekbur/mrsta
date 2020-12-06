@@ -8,7 +8,7 @@
   animation-name: printer-vstup;
   animation-duration: 2s;
   animation-fill-mode: both;
-  transition: left .8s;
+  transition: all .8s;
 }
 
 #print div {
