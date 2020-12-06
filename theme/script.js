@@ -19,7 +19,11 @@ document.getElementById('play').addEventListener('click',function(){
   player.load();
   player.play();
 })
-player.play();
+
+document.body.addEventListener('mousemove', function() {
+  player.play();
+})
+
 document.getElementById('stop').addEventListener('click',function(){
   player.pause();
 })
