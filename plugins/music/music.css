@@ -1,0 +1,17 @@
+button {
+  outline:0;background: var(--secondary); border:0;
+  width: 30px;
+  height: 30px;
+  font-weight: 800;
+  box-shadow: 2px 2px 1px var(--primary);
+}
+button:hover {
+  color: var(--secondary);
+background: var(--primary);
+}
+
+#music {
+  position:absolute;
+  top: 0;
+  right: 50px
+}
