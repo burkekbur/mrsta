@@ -16,8 +16,10 @@ hudba.innerHTML = `
 document.body.appendChild(hudba);
 let player = document.getElementById('hudba');
 document.getElementById('play').addEventListener('click',function(){
+  player.load();
   player.play();
 })
+player.play();
 document.getElementById('stop').addEventListener('click',function(){
   player.pause();
 })
